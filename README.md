@@ -5,14 +5,21 @@ Self-Driving Car Engineer Nanodegree Program
 
 ## MPC Controll
 
-** MPC ** -> Model Predictive Control
+
+**MPC** -> Model Predictive Control
 
 MPC is an advanced method of process control that is used to control a process while satisfying a set of constraints.
 
 
-** Model Implementation : **
+**Model Implementation :**
 
-  ** State Vector ** :
+  **Goal :**
+
+  The goal of Model Predictive Control is to optimize the control inputs: [δ,a]. An optimizer will tune these inputs until a low cost  vector of control inputs is found.
+
+
+
+  **State Vector** :
 
   x, y : Car's position.
 
@@ -24,7 +31,7 @@ MPC is an advanced method of process control that is used to control a process w
   epsi : Orientation error
 
 
-  ** Equations : **
+  **Equations :**
 
   <img src="img/equations.png">
 
@@ -35,8 +42,6 @@ MPC is an advanced method of process control that is used to control a process w
   N, dt, and T are hyperparameters you will need to tune for each model predictive controller.
 
 
-  ** Goal : **
-  The goal of Model Predictive Control is to optimize the control inputs: [δ,a]. An optimizer will tune these inputs until a low cost  vector of control inputs is found.
 
 
-  Note : The cost function parameters were tuned by try-and-error .
+  ***Note*** : The cost function parameters were tuned by try-and-error .
